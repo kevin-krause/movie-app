@@ -1,1 +1,16 @@
 /* You can add global styles to this file, and also import other style files */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Ubuntu", sans-serif;
+  background: rgb(17, 18, 18);
+  background-color: linear-gradient(
+    0deg,
+    rgba(17, 18, 18, 1) 0%,
+    rgba(21, 28, 32, 1) 100%
+  );
+}

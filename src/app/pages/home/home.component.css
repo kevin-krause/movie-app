@@ -39,3 +39,7 @@
 .largeposter {
   max-width: 600px;
 }
+
+.rowposter::-webkit-scrollbar {
+  display: none;
+}

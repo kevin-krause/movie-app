@@ -1,0 +1,17 @@
+button {
+  background-color: #e50914;
+  color: #ffffff;
+}
+
+button:hover {
+  background-color: #4d0508;
+  color: #fc0d19;
+}
+
+.row {
+  justify-content: center;
+}
+
+img {
+  width: 100%;
+}

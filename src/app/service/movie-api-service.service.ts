@@ -29,19 +29,19 @@ export class MovieApiServiceService {
     );
   }
 
-  movieDetails(data: any): Observable<any> {
+  getMovieDetails(data: any): Observable<any> {
     return this.http.get(
       `${this.baseurl}/movie/${data}?api_key=${this.apikey}`
     );
   }
 
-  movieTrailer(data: any): Observable<any> {
+  getMovieVideo(data: any): Observable<any> {
     return this.http.get(
       `${this.baseurl}/movie/${data}/videos?api_key=${this.apikey}`
     );
   }
 
-  movieCast(data: any): Observable<any> {
+  getMovieCast(data: any): Observable<any> {
     return this.http.get(
       `${this.baseurl}/movie/${data}/credits?api_key=${this.apikey}`
     );

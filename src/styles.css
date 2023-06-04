@@ -13,4 +13,5 @@ body {
     rgba(17, 18, 18, 1) 0%,
     rgba(21, 28, 32, 1) 100%
   );
+  overflow-x: hidden;
 }

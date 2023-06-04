@@ -12,3 +12,14 @@ p {
   color: #ffffff;
 }
 
+a {
+  background-color: #e50914;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+a:hover {
+  background-color: #e50914;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+}

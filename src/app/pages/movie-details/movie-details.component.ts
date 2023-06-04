@@ -15,7 +15,7 @@ export class MovieDetailsComponent {
   ) {}
 
   moveieDetailsResult: any;
-  moveieVideo: any;
+  movieVideo: any;
   movieCast: any;
 
   ngOnInit(): void {
@@ -35,14 +35,18 @@ export class MovieDetailsComponent {
   getVideo(id: any) {
     this.service.movieTrailer(id).subscribe((result: any) => {
       console.log(result, 'getMovietrailer##');
-      this.moveieVideo = result;
+      result.results.forEach((element: any) => {
+        if (element.type === 'Trailer') {
+          this.movieVideo = element.key;
+        }
+      });
     });
   }
 
   getCast(id: any) {
     this.service.movieCast(id).subscribe((result: any) => {
       console.log(result, 'movieCast##');
-      this.movieCast = result;
+      this.movieCast = result.cast;
     });
   }
 }

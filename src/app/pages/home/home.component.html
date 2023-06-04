@@ -11,6 +11,7 @@
           src="https://image.tmdb.org/t/p/original/{{ b.backdrop_path }}"
           class="d-block w-100"
           alt="..."
+          [routerLink]="['/movie', b.id]"
         />
         <div class="carousel-caption md-block">
           <h2>{{ b.original_title }}</h2>
